@@ -1,0 +1,31 @@
+.invisible {
+    position: absolute;
+    opacity: 0;
+}
+
+.anim {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    animation: fall;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@Keyframes fall {
+    0%{
+        opacity:0;
+        transform: translateY(0);
+    }
+    7%{
+        opacity:1;
+    }
+    90%{
+        opacity:0.3;
+    }
+    100%{
+        opacity:0;
+        transform: translateY(750px);
+    }
+}
