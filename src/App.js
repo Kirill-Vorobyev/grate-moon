@@ -52,10 +52,8 @@ subtractMoon = () => {
 addStringCheese = (cheese) => {
   this.setState((prevState,props)=>{
     let number = Math.floor(Math.random()*5)+4;
-    console.log('lastNumber:',prevState.number,'newNumber:',number);
     while(prevState.number === number){
       number = Math.floor(Math.random()*5)+4;
-      console.log('lastNumber:',prevState.number,'newNumber:',number);
     }
     let newStringCheese = [];
     for(let s=0;s<number;s++){
