@@ -4,7 +4,6 @@ import moonImg from '../images/moon.png';
 class Moon extends Component {
     constructor(props){
         super(props);
-        console.log('[Moon.js] Inside Constructor', props);
         this.state = {
           
         }
